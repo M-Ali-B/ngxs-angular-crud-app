@@ -1,0 +1,5 @@
+<ul >
+
+<li *ngFor="let todo of todos | async " >{{todo.title}} <span id="del" (click) = "onDelete(todo.id)">=>  x</span> <button (click) = "onSelect(todo)">Edit</button> </li>
+
+</ul>
